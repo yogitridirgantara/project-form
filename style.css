@@ -1,0 +1,123 @@
+body {
+    background-color: rgb(29, 29, 28);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.main {
+    height: 420px;
+    width: 300px;
+    margin: auto;
+    background: linear-gradient(#17468b, #011635);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.main span {
+    margin: 10px;
+    border: none;
+    outline: none;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #02122b;
+    color: rgb(250, 250, 250);
+    text-align: center;
+}
+
+#chk {
+    display: none;
+}
+
+.form {
+    text-align: center;
+    margin: 10px;
+    color: rgb(250, 250, 250);
+    font-size: 2em;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.login {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.login label {
+    margin: 0;
+}
+
+label {
+    margin: auto;
+    color: rgb(250, 250, 250);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    font-weight: bold;
+    text-transform: capitalize;
+    cursor: pointer;
+    transform: scale(.6);
+}
+
+input {
+    margin: 10px;
+    border: none;
+    outline: none;
+    height: 30px;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #02122b;
+    color: rgb(250, 250, 250);
+    text-align: center;
+}
+
+.form button {
+    margin: auto;
+    border: none;
+    outline: none;
+    width: 6em;
+    padding: 10px;
+    justify-content: center;
+    border-radius: 10%;
+    background-color: #04183a;
+    color: rgb(250, 250, 250);
+    text-transform: capitalize;
+    cursor: pointer;
+}
+
+.register {
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(#011635);
+    transform: translateY(20%);
+    -webkit-transform: translateY(20%);
+    -moz-transform: translateY(20%);
+    -ms-transform: translateY(20%);
+    -o-transform: translateY(20%);
+}
+
+.register label {
+    color: rgb(250, 250, 250);
+    transform: scale(.6);
+    -webkit-transform: scale(.6);
+    -moz-transform: scale(.6);
+    -ms-transform: scale(.6);
+    -o-transform: scale(.6);
+}
+
+#chk:checked~.login {
+    transform: translateY(-83%);
+    -webkit-transform: translateY(-83%);
+    -moz-transform: translateY(-83%);
+    -ms-transform: translateY(-83%);
+    -o-transform: translateY(-83%);
+}
+
+#chk:checked~.register {
+    transform: translateY(10%);
+    -webkit-transform: translateY(10%);
+    -moz-transform: translateY(10%);
+    -ms-transform: translateY(10%);
+    -o-transform: translateY(10%);
+}
